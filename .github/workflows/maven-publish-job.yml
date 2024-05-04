@@ -45,6 +45,7 @@ jobs:
   SecondTest:
 
     runs-on: ubuntu-latest
+    needs: FirstTest
     permissions:
       contents: read
       packages: write
